@@ -1,3 +1,5 @@
 *~
 output.trash/*
 devel/MNIST_dataset/*ubyte
+build/debug/**
+build/release/**
