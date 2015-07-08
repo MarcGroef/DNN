@@ -1,3 +1,4 @@
+//copyright 2015 (c) Marc Groefsema
 #include "../include/dnn_layer_stack.h"
 
 void setInputData(LayerStack* net,Dataset* data, int index){

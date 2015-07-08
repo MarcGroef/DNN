@@ -1,3 +1,5 @@
+//copyright 2015 (c) Marc Groefsema
+
 #include "../include/dnn_flow.h"
 
 void flowUpUntil(LayerStack *network,int layer){

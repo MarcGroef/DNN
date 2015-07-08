@@ -1,3 +1,5 @@
+//copyright 2015 (c) Marc Groefsema
+
 #ifndef DNN_MODULE_H
 #define DNN_MODULE_H
 

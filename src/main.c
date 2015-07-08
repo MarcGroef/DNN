@@ -1,3 +1,4 @@
+//copyright 2015 (c) Marc Groefsema
 #include <stdio.h>
 #include <stdlib.h>
 

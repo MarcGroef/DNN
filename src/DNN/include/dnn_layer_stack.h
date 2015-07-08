@@ -1,3 +1,4 @@
+//copyright 2015 (c) Marc Groefsema
 #ifndef DNN_LAYER_STACK_H
 #define DNN_LAYER_STACK_H
 

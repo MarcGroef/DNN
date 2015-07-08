@@ -1,3 +1,4 @@
+//copyright 2015 (c) Marc Groefsema
 #ifndef DNN_PRETRAINER_H
 #define DNN_PRETRAINER_H
 
