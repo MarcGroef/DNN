@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 #include "DNN/include/dnn.h"
+#include "MNIST/include/mnist.h"
 
 int main(int argc, char**argv){
-	printf("Hello, world!\n");
+	parseImage(argc,argv);
 	return 0;
 }
