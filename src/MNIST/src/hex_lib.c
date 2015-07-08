@@ -77,7 +77,7 @@ int32_t hex_alphabet_to_int(char hex_char) {
 }
 
 int32_t hex_char_to_int(char hex_char) {
-  int32_t return_value = 0;
+  //int32_t return_value = 0;
   char higher_half_char = higher_half(hex_char);
   char lower_half_char = lower_half(hex_char);
   return hex_to_int_array[hex_alphabet_to_int(higher_half_char)]

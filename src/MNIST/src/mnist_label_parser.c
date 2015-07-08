@@ -17,12 +17,12 @@
 #include "../include/macros.h"
 
 // Usage
-/*
-const char* kUsage = "./a.out input_file output_file";
 
-int main(int argc, char** argv) {
+const char* kLabelUsage = "./a.out input_file output_file";
+
+int parseLabel(int argc, char** argv) {
   if (argc != 3) {
-    printf("Usage: %s\n", kUsage);
+    printf("Usage: %s\n", kLabelUsage);
     return 1;
   }
   FILE* input_file_pointer = fopen(argv[1], "r");
@@ -63,4 +63,3 @@ int main(int argc, char** argv) {
   getchar();
   return 0;
 }
-*/

@@ -4,10 +4,10 @@ void flowUpUntil(LayerStack *network,int layer){
 	for (int l = 1; l < layer; l++){ //target layer
 		for (int n = 0; n < LAYER_SIZE; n++){ //target neuron
 			network->stack[l].neurons[n] = 0;
-				for (int m = 0; m < LAYER_SIZE; m++){//source neuron
-					network->stack[l].neurons[n] += network->stack[l - 1].neurons[m] * network->stack[l - 1].weightsNext[m][n];
-				}
-				network->stack[l].neurons[n] = sigmoid(network->stack[l].neurons[n]);
+			for (int m = 0; m < LAYER_SIZE; m++){//source neuron
+				network->stack[l].neurons[n] += network->stack[l - 1].neurons[m] * network->stack[l - 1].weightsNext[m][n];
+			}
+			network->stack[l].neurons[n] = sigmoid(network->stack[l].neurons[n]);
 		}
 
 	}

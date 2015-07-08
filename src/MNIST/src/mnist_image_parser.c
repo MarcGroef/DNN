@@ -18,11 +18,11 @@
 
 // Usage
 
-const char* kUsage = "./a.out input_file output_file";
+const char* kImageUsage = "./a.out input_file output_file";
 
-int main(int argc, char** argv) {
+int parseImage(int argc, char** argv) {
   if (argc != 3) {
-    printf("Usage: %s\n", kUsage);
+    printf("Usage: %s\n", kImageUsage);
     return 1;
   }
   FILE* input_file_pointer = fopen(argv[1], "r");
@@ -83,4 +83,5 @@ int main(int argc, char** argv) {
   free(images_pixels_bytes);
   fclose(input_file_pointer);
   fclose(output_file_pointer);
+  return 0;
 }
