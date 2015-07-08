@@ -1,0 +1,5 @@
+*~
+output.trash/*
+#MNIST_dataset/*.idx3-ubyte
+#MNIST_dataset/*.idx1-ubyte
+#MNIST_dataset/*.txt
