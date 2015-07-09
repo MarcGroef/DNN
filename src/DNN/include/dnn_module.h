@@ -18,5 +18,5 @@ typedef struct{
 	Dataset dataset;
 }DNN_Module;
 
-
+void initDNNModule(DNN_Module* module);
 #endif

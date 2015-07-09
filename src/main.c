@@ -13,8 +13,9 @@ int main(int argc, char**argv){
 		return 0;
 	}
 	DNN_Module dnn;
-	dnn.dataset.data=NULL;
-	addMNIST(argv[1],&dnn.dataset,1000);
-	performRBM(&dnn.network, &dnn.dataset,0.2);
+	initDNNModule(&dnn);
+	addMNIST(argv[1],&dnn.dataset,10);
+	initStackWeightsRandom(&dnn.network);
+	performRBM(&dnn.network, &dnn.dataset,0.2,10);
 	return 0;
 }

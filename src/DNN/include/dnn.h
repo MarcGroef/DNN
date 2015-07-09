@@ -14,6 +14,7 @@
 #include "dnn_layer_stack.h"
 #include "dnn_module.h"
 #include "dnn_pretrainer.h"
+#include "dnn_weights.h"
 
 
 

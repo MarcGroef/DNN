@@ -11,7 +11,7 @@
 #include "dnn_data.h"
 #include "dnn_flow.h"
 
-void performRBM(LayerStack* layers, Dataset* dataset,float learningRate);
+void performRBM(LayerStack* layers, Dataset* dataset,float learningRate,int nIterations);
 
 
 
