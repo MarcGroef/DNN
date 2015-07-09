@@ -9,12 +9,9 @@
 #include <assert.h>
 
 //include dependencies
+#include "dnn_constants.h"
 
 
-
-#ifndef LAYER_SIZE
-#define LAYER_SIZE 10
-#endif
 
 typedef struct{
 	int size;

@@ -12,9 +12,9 @@ int main(int argc, char**argv){
 		
 		return 0;
 	}
-	printf("argv[1]=%s\n",argv[1]);
 	DNN_Module dnn;
-	addMNIST(argv[1],&dnn.dataset,10);
-	
+	dnn.dataset.data=NULL;
+	addMNIST(argv[1],&dnn.dataset,1000);
+	performRBM(&dnn.network, &dnn.dataset,0.2);
 	return 0;
 }

@@ -4,10 +4,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "dnn_constants.h"
 
-#ifndef LAYER_SIZE
-#define LAYER_SIZE 10
-#endif
+
+
 
 typedef struct{
 	float neurons[LAYER_SIZE];

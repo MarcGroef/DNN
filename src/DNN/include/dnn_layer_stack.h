@@ -8,18 +8,12 @@
 #include <stdlib.h>
 
 //these should be defined by dnn.h
-#ifndef LAYER_STACK_SIZE
-#define LAYER_STACK_SIZE 10
-#endif
 
-#ifndef OUTPUT_LAYER_SIZE 
-#define OUTPUT_LAYER_SIZE 6
-#endif
 
 //include dependancies
 #include "dnn_layer.h"
 #include "dnn_data.h"
-
+#include "dnn_constants.h"
 //typedefs
 
 typedef struct {

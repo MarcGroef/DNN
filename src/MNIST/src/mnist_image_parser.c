@@ -58,24 +58,24 @@ int parseImage(char* input_file,int nImages,float** data) {
   int32_t num_pixles_in_image = num_cols * num_rows;
   //char images_pixels_bytes[num_pixles_in_image];
   char* images_pixels_bytes = malloc(num_pixles_in_image);
-  int images_done = 0;
-  while (images_done++ < number_of_images) {
+  
+  for(int images_done = 0; images_done<nImages;images_done++){
+  
+    //printf("parse image %d\n",images_done);
     CHECK(fread(images_pixels_bytes, sizeof(char), num_pixles_in_image, input_file_pointer));
-    int32_t idx = 0;
-    for (idx = 0; idx < num_pixles_in_image; ++idx) {
+    
+   
+    for (int32_t idx = 0; idx < num_pixles_in_image; ++idx) {
+      //printf("image %d at pixel %d\n",images_done,idx);
       int32_t image_pixel_value = hex_char_to_int(images_pixels_bytes[idx]);
 
       // A graphic of the number this represents.
-      if (idx % num_cols == 0) printf("\n");
-      if (image_pixel_value < 10) {
-        printf(".");
-      } else {
-        printf("*");
-      }
+      data[images_done][idx] = (float)image_pixel_value;
     }
-    printf("\n----------------------------------------------------------\n");
-    
+
+     
   }
+  printf("Images parsed.\n");
   free(images_pixels_bytes);
   fclose(input_file_pointer);
   

@@ -9,6 +9,7 @@ void datasetAlloc(Dataset* dataset, int size){
 		dataset->data[i] = malloc(LAYER_SIZE*sizeof(float));
 		assert(dataset->data[i] != NULL);
 	}
+	printf("Allocated dataset: %d bytes\n",(int)(size*sizeof(float*)+LAYER_SIZE*sizeof(float)));
 }
 
 
