@@ -6,6 +6,15 @@
 #include "MNIST/include/mnist.h"
 
 int main(int argc, char**argv){
-	parseImage(argc,argv);
+	if(argc!=2){
+		printf("argc:%d\n",argc);
+		printf("Usage: ./dnn <mnist image directory>\n");
+		
+		return 0;
+	}
+	printf("argv[1]=%s\n",argv[1]);
+	DNN_Module dnn;
+	addMNIST(argv[1],&dnn.dataset,10);
+	
 	return 0;
 }

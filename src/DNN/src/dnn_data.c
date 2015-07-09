@@ -1,6 +1,6 @@
 //copyright 2015 (c) Marc Groefsema
 #include "../include/dnn_data.h"
-
+#include "../../MNIST/include/mnist.h"
 void datasetAlloc(Dataset* dataset, int size){
 	dataset->size = size;
 	dataset->data = (float**)malloc(size*sizeof(float*));
@@ -16,4 +16,13 @@ void datasetFree(Dataset* dataset){
 	for (int i = 0; i < dataset->size; i++)
 		free(dataset->data[i]);
 	free(dataset->data);
+}
+
+void addMNIST(char* mnist_dir,Dataset* dataset,int size){
+	int parseSucces;
+	
+	if(dataset->data==NULL)
+		datasetAlloc(dataset,size);
+	parseSucces = parseImage(mnist_dir,size,dataset->data);
+	
 }

@@ -9,12 +9,14 @@
 
 //include dependencies 
 #include "dnn_layer_stack.h"
+#include "dnn_data.h"
+
 
 
 typedef struct{
 	LayerStack network;
-
-}DNN_Molude;
+	Dataset dataset;
+}DNN_Module;
 
 
 #endif

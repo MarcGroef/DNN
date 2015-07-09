@@ -4,7 +4,7 @@
 #include "hex_lib.h"
 #include "macros.h"
 
-int parseImage(int argc, char** argv);
+int parseImage(char* input_file,int nImages,float** data);
 int parseLabel(int argc, char** argv);
 
 #endif

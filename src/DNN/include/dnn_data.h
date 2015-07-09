@@ -23,6 +23,8 @@ typedef struct{
 
 void datasetAlloc(Dataset* dataset,int size);
 void datasetFree(Dataset* dataset);
+void addMNIST(char* mnist_dir,Dataset* dataset,int size);
+
 
 #endif
 
