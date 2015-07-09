@@ -1,3 +1,5 @@
+//copyright 2015 (c) Marc Groefsema
+
 #ifndef MNIST_H
 #define MNIST_H
 

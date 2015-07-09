@@ -1,3 +1,4 @@
+//copyright 2015 (c) Marc Groefsema
 #include "../include/dnn_weights.h"
 
 float randf(float bot,float top){
