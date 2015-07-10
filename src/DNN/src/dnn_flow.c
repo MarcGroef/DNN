@@ -43,3 +43,11 @@ void flowDownFrom(LayerStack* network, int layer){
 void flowDown(LayerStack* stack){
 	flowDownFrom(stack, LAYER_SIZE - 1);
 }
+
+
+void readNeuron(LayerStack* layers,int layer,int neuron){
+	for(int i=0;i<LAYER_SIZE;i++){
+		layers->stack[layer].neurons[i] = i==neuron?1:0;
+	}
+	flowDownFrom(layers,layer);
+)
