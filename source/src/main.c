@@ -14,14 +14,14 @@ int main(int argc, char**argv){
 	}
 	DNNModule dnn;
 	initDNNModule(&dnn);
-	addMNIST(argv[1],&dnn.dataset,1);
+	addMNIST(argv[1],&dnn.dataset,1000);
 	initStackWeightsRandom(&dnn.network);
-	performRBM(&dnn.network, &dnn.dataset,.9,100,1);
-	/*for(int i=0;i<100;i++){
+	performRBM(&dnn.network, &dnn.dataset,.2,100,4); //learningrate, nIterations per layer,kSteps
+	/*for(int i=0;i<10;i++){
 		setInputData(&dnn.network,&dnn.dataset,i);
 		showInputLayer2DImage(&dnn.network);
 	}*/
-	readNeuron(&dnn.network,LAYER_STACK_SIZE-1,LAYER_SIZE);
+	readLayer(&dnn.network,dnn.network.nLayers-1);
 	
  	freeDNNModule(&dnn);
 	return 0;

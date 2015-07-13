@@ -10,7 +10,6 @@ src/main.c
 src/dnn/dnn_backprop.c
 src/dnn/dnn_data.c
 src/dnn/dnn_flow.c
-src/dnn/dnn_layer.c
 src/dnn/dnn_layer_stack.c
 src/dnn/dnn_math.c
 src/dnn/dnn_module.c

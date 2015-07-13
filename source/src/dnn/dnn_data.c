@@ -7,10 +7,10 @@ void datasetAlloc(Dataset* dataset, int size){
 	dataset->data = (float**)malloc(size*sizeof(float*));
 	assert(dataset->data != NULL);
 	for (int i = 0; i < size; i++){
-		dataset->data[i] =(float*) malloc(LAYER_SIZE*sizeof(float));
+		dataset->data[i] =(float*) malloc(INPUT_LAYER_SIZE*sizeof(float));
 		assert(dataset->data[i] != NULL);
 	}
-	printf("Allocated dataset: %d bytes\n",(int)(size*sizeof(float*)+LAYER_SIZE*sizeof(float)));
+	printf("Allocated dataset: %d bytes\n",(int)(size*sizeof(float*)+INPUT_LAYER_SIZE*sizeof(float)));
 }
 
 

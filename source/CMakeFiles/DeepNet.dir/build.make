@@ -141,32 +141,9 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o.provides: CMakeFiles/DeepNet.dir/src
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o.provides.build: CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o
 
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o: CMakeFiles/DeepNet.dir/flags.make
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o: src/dnn/dnn_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o"
-	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_layer.c
-
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.i"
-	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/marc/Deepnet/source/src/dnn/dnn_layer.c > CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.i
-
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.s"
-	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/marc/Deepnet/source/src/dnn/dnn_layer.c -o CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.s
-
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.requires:
-.PHONY : CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.requires
-
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.provides: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.requires
-	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.provides.build
-.PHONY : CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.provides
-
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.provides.build: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o
-
 CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o: src/dnn/dnn_layer_stack.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_layer_stack.c
 
@@ -189,7 +166,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o.provides.build: CMakeFiles/De
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o: src/dnn/dnn_math.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_math.c
 
@@ -212,7 +189,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o.provides.build: CMakeFiles/DeepNet.d
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o: src/dnn/dnn_module.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_module.c
 
@@ -235,7 +212,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o.provides.build: CMakeFiles/DeepNet
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o: src/dnn/dnn_pretrainer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_pretrainer.c
 
@@ -258,7 +235,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o.provides.build: CMakeFiles/Dee
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o: src/dnn/dnn_show.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_show.c
 
@@ -281,7 +258,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o.provides.build: CMakeFiles/DeepNet.d
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o: src/dnn/dnn_weights.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_weights.c
 
@@ -304,7 +281,7 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o.provides.build: CMakeFiles/DeepNe
 
 CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o: src/MNIST/hex_lib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o   -c /home/marc/Deepnet/source/src/MNIST/hex_lib.c
 
@@ -327,7 +304,7 @@ CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o.provides.build: CMakeFiles/DeepNet.
 
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o: src/MNIST/mnist_image_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o   -c /home/marc/Deepnet/source/src/MNIST/mnist_image_parser.c
 
@@ -350,7 +327,7 @@ CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o.provides.build: CMakeFil
 
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o: src/MNIST/mnist_label_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o   -c /home/marc/Deepnet/source/src/MNIST/mnist_label_parser.c
 
@@ -377,7 +354,6 @@ DeepNet_OBJECTS = \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o" \
-"CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o" \
@@ -395,7 +371,6 @@ DeepNet_EXTERNAL_OBJECTS =
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o
-/home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o
@@ -447,7 +422,6 @@ CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/main.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o.requires
-CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o.requires

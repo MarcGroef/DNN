@@ -255,30 +255,6 @@ src/dnn/dnn_flow.c.s:
 	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.s
 .PHONY : src/dnn/dnn_flow.c.s
 
-src/dnn/dnn_layer.o: src/dnn/dnn_layer.c.o
-.PHONY : src/dnn/dnn_layer.o
-
-# target to build an object file
-src/dnn/dnn_layer.c.o:
-	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o
-.PHONY : src/dnn/dnn_layer.c.o
-
-src/dnn/dnn_layer.i: src/dnn/dnn_layer.c.i
-.PHONY : src/dnn/dnn_layer.i
-
-# target to preprocess a source file
-src/dnn/dnn_layer.c.i:
-	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.i
-.PHONY : src/dnn/dnn_layer.c.i
-
-src/dnn/dnn_layer.s: src/dnn/dnn_layer.c.s
-.PHONY : src/dnn/dnn_layer.s
-
-# target to generate assembly for a file
-src/dnn/dnn_layer.c.s:
-	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.s
-.PHONY : src/dnn/dnn_layer.c.s
-
 src/dnn/dnn_layer_stack.o: src/dnn/dnn_layer_stack.c.o
 .PHONY : src/dnn/dnn_layer_stack.o
 
@@ -474,9 +450,6 @@ help:
 	@echo "... src/dnn/dnn_flow.o"
 	@echo "... src/dnn/dnn_flow.i"
 	@echo "... src/dnn/dnn_flow.s"
-	@echo "... src/dnn/dnn_layer.o"
-	@echo "... src/dnn/dnn_layer.i"
-	@echo "... src/dnn/dnn_layer.s"
 	@echo "... src/dnn/dnn_layer_stack.o"
 	@echo "... src/dnn/dnn_layer_stack.i"
 	@echo "... src/dnn/dnn_layer_stack.s"

@@ -11,15 +11,16 @@
 
 
 //include dependancies
-#include "dnn_layer.h"
 #include "dnn_data.h"
 #include "dnn_constants.h"
 //typedefs
 
 typedef struct {
-	Layer** stack;
-	float* input_layer;
-	float** input_weights;
+	int* layerSizes;
+	int nLayers;
+	float** layers;
+	float*** weights;
+	
 	//float output_weights[LAYER_SIZE][OUTPUT_LAYER_SIZE];
 	//float output_layer[OUTPUT_LAYER_SIZE];
 }LayerStack;

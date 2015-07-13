@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/marc/Deepnet/source/src/dnn/dnn_weights.c
-dnn/dnn_weights.h
--
-
 /home/marc/Deepnet/source/src/main.c
 stdio.h
 -
@@ -47,8 +43,6 @@ dnn_constants.h
 include/dnn/dnn_constants.h
 dnn_data.h
 include/dnn/dnn_data.h
-dnn_layer.h
-include/dnn/dnn_layer.h
 dnn_layer_stack.h
 include/dnn/dnn_layer_stack.h
 dnn_module.h
@@ -57,6 +51,8 @@ dnn_pretrainer.h
 include/dnn/dnn_pretrainer.h
 dnn_weights.h
 include/dnn/dnn_weights.h
+dnn_flow.h
+include/dnn/dnn_flow.h
 
 include/dnn/dnn_constants.h
 
@@ -86,16 +82,6 @@ include/dnn/dnn_math.h
 dnn_show.h
 include/dnn/dnn_show.h
 
-include/dnn/dnn_layer.h
-stdio.h
--
-stdlib.h
--
-assert.h
--
-dnn_constants.h
-include/dnn/dnn_constants.h
-
 include/dnn/dnn_layer_stack.h
 stdio.h
 -
@@ -103,8 +89,6 @@ stdlib.h
 -
 assert.h
 -
-dnn_layer.h
-include/dnn/dnn_layer.h
 dnn_data.h
 include/dnn/dnn_data.h
 dnn_constants.h
@@ -112,6 +96,8 @@ include/dnn/dnn_constants.h
 
 include/dnn/dnn_math.h
 math.h
+-
+stdio.h
 -
 
 include/dnn/dnn_module.h

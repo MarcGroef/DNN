@@ -19,6 +19,6 @@ void flowUpUntil(LayerStack* stack, int layer);  //runs activity up to indicated
 void flowUp(LayerStack* stack);
 void flowDownFrom(LayerStack* network, int layer);//runs activity down from indicated layer
 void flowDown(LayerStack* stack);
-void readNeuron(LayerStack* layers,int layer,int nNeurons);
+void readLayer(LayerStack* layers,int layer);
 
 #endif

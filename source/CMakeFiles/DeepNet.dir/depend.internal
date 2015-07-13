@@ -21,7 +21,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o
  include/dnn/dnn_backprop.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o
  /home/marc/Deepnet/source/src/dnn/dnn_data.c
@@ -38,14 +37,9 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
  include/dnn/dnn_flow.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_math.h
  include/dnn/dnn_show.h
-CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o
- /home/marc/Deepnet/source/src/dnn/dnn_layer.c
- include/dnn/dnn_constants.h
- include/dnn/dnn_layer.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o
  /home/marc/Deepnet/source/src/dnn/dnn_layer_stack.c
  include/MNIST/hex_lib.h
@@ -53,7 +47,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o
  include/MNIST/mnist.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o
  /home/marc/Deepnet/source/src/dnn/dnn_math.c
@@ -65,7 +58,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o
  include/MNIST/mnist.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_module.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o
@@ -76,7 +68,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
  include/dnn/dnn_flow.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_math.h
  include/dnn/dnn_pretrainer.h
@@ -88,7 +79,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o
  include/MNIST/mnist.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_show.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o
@@ -98,7 +88,6 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o
  include/MNIST/mnist.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_weights.h
 CMakeFiles/DeepNet.dir/src/main.c.o
@@ -110,7 +99,6 @@ CMakeFiles/DeepNet.dir/src/main.c.o
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
  include/dnn/dnn_flow.h
- include/dnn/dnn_layer.h
  include/dnn/dnn_layer_stack.h
  include/dnn/dnn_math.h
  include/dnn/dnn_module.h

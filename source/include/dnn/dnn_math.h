@@ -4,7 +4,7 @@
 
 
 #include <math.h>
-
+#include <stdio.h>
 #define DNN_EULER 2.718281828459045
 
 float sigmoid(float x);

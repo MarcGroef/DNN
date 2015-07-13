@@ -10,7 +10,6 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/marc/Deepnet/source/src/dnn/dnn_backprop.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_data.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_flow.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o"
-  "/home/marc/Deepnet/source/src/dnn/dnn_layer.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_layer_stack.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_math.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_module.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o"

@@ -4,23 +4,23 @@
 
 
 void showInputLayer(LayerStack* stack){
-	for(int i=0;i<LAYER_SIZE;i++){
-		printf("%c",(stack->stack[0]->neurons[i]<0.5f?'.':'*'));
+	for(int i=0;i<stack->layerSizes[0];i++){
+		printf("%c",(stack->layers[0][i]<0.5f?'.':'*'));
 	}
 }
 
 void showInputLayer2D(LayerStack* stack){
-	int width = (int)sqrt(LAYER_SIZE);
+	int width = (int)sqrt(stack->layerSizes[0]);
 	char c;
 	printf("-----------------------------------------\n");
 	for(int i=0;i<width;i++){
 		for(int j=0;j<width;j++){
 			//printf("%c",(stack->stack[0]->neurons[width*i+j]<0.5f?' ':'*'));
-			if(stack->stack[0]->neurons[width*i+j]<.25f)
+			if(stack->layers[0][width*i+j]<.25f)
 				c=' ';
-			else if(stack->stack[0]->neurons[width*i+j]<0.5f)
+			else if(stack->layers[0][width*i+j]<0.5f)
 				c='.';
-			else if(stack->stack[0]->neurons[width*i+j]<.75f)
+			else if(stack->layers[0][width*i+j]<.75f)
 				c='*';
 			else 
 				c='x';
@@ -32,9 +32,10 @@ void showInputLayer2D(LayerStack* stack){
 }
 
 void showInputLayer2DImage(LayerStack* stack){
+	//printf("show image\n");
 	int scale = 10;
-	CvMat* image,*upscaled;
-	int width = sqrt(LAYER_SIZE);
+	CvMat* image;
+	int width = sqrt(stack->layerSizes[0]);
 	image =cvCreateMat(width*scale,width*scale,CV_8UC1);
 	//upscaled =cvCreateMat(width*scale,width*scale,CV_8UC1);
 	unsigned char* data = malloc((width*width*scale*scale)*sizeof(unsigned char));
@@ -42,7 +43,7 @@ void showInputLayer2DImage(LayerStack* stack){
 	for(int i=0;i<width*scale;i++){
 		for(int j=0;j<width*scale;j++){
 			//printf("to %d from %d\n",i*width*scale+j,(i/scale)*width+j/scale);
-			data[i*width*scale+j] = 255-(stack->stack[0]->neurons[(i/scale)*width+j/scale]*255);
+			data[i*width*scale+j] = 255-(stack->layers[0][(i/scale)*width+j/scale]*255);
 			//printf("neuron: %.3f, pixel: %d \n",stack->stack[0]->neurons[i],data[i]);
 		}
 	}

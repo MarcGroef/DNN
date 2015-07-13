@@ -3,7 +3,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o"
-  "CMakeFiles/DeepNet.dir/src/dnn/dnn_layer.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_math.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o"

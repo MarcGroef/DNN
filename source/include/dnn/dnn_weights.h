@@ -8,7 +8,7 @@
 #include "dnn_layer_stack.h"
 #include "dnn_constants.h"
 
-void initWeightsRandom(Layer* layer);
+void initWeightsRandom(LayerStack* ls,int layer);
 void initStackWeightsRandom(LayerStack* ls);
 
 #endif

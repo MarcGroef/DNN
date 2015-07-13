@@ -2,8 +2,8 @@
 #include <dnn/dnn_module.h>
 
 void initDNNModule(DNNModule* module){
-	//initLayerStack(&module->network);
-	allocLayerStack(&module->network);
+	initLayerStack(&module->network);
+	//allocLayerStack(&module->network);
 	module->dataset.data=NULL;
 	
 }
