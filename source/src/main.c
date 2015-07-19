@@ -16,7 +16,7 @@ int main(int argc, char**argv){
 	initDNNModule(&dnn);
 	addMNIST(argv[1],&dnn.dataset,1000);
 	initStackWeightsRandom(&dnn.network);
-	performRBM(&dnn.network, &dnn.dataset,.2,100,4); //learningrate, nIterations per layer,kSteps
+	performRBM(&dnn.network, &dnn.dataset,.1,1000,10); //learningrate, nIterations per layer,kSteps
 	/*for(int i=0;i<10;i++){
 		setInputData(&dnn.network,&dnn.dataset,i);
 		showInputLayer2DImage(&dnn.network);

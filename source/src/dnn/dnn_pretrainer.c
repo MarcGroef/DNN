@@ -40,13 +40,22 @@ void performRBM(LayerStack* layers,Dataset* dataset,float learningRate,int nIter
 	float** vihjData;
 	float** vihjModel;
 	float learnStep;
+	float totalLearned=0;
+	float prevTotalLearned=0;
+	float preprevTotalLearned=0;
+	float diffThreshold=0.000001;
+	int it=0;
 	//iterate through layer stack
 	for (int layer = 0; layer <layers->nLayers-1; layer++){ //layer i
 		vihjData = allocViHj(layers->layerSizes[layer],layers->layerSizes[layer+1]);
 		vihjModel = allocViHj(layers->layerSizes[layer],layers->layerSizes[layer+1]);
-		for (int it=0;it<nIterations;it++){
-			printf("RBM iteration %d at layer %d\n",it+1,layer);
+		//for (int it=0;it<nIterations;it++){
+		printf("%f\n",fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3)));
+		for(it=0;it<10||fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3))>diffThreshold;it++){
+			//printf("RBM iteration %d at layer %d\n",it+1,layer);
+			totalLearned=0;
 			for (int dataLayer = 0; dataLayer < datasetSize; dataLayer++){
+				
 				setInputData(layers, dataset, dataLayer);
 				flowUpUntil(layers,layer+1); // get next layer activation
 				//showInputLayer2DImage(layers);
@@ -65,11 +74,21 @@ void performRBM(LayerStack* layers,Dataset* dataset,float learningRate,int nIter
 						
 						learnStep = learningRate*(vihjData[source][target]-vihjModel[source][target]);
 						layers->weights[layer][source][target] += learnStep;
+						totalLearned+=fabs(learnStep);
 						//printf("learnstep:%.3f\n",learnStep);
 					}
 				}
 				
+				
 			}
+			totalLearned/=datasetSize*layers->layerSizes[layer]*layers->layerSizes[layer+1];
+			preprevTotalLearned = prevTotalLearned;
+			prevTotalLearned = totalLearned;
+			
+			
+			float var = fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3));
+			printf("totalWeight edit @ %d: %f %f\n",it,var,totalLearned);
+			
 		}
 		freeViHj(vihjData,layers->layerSizes[layer]);
 		freeViHj(vihjModel,layers->layerSizes[layer]);

@@ -11,8 +11,8 @@
 
 */
 
-#define LAYER_STACK_SIZE 2 
-#define LAYER_SIZES {28*28,20}
+#define LAYER_STACK_SIZE 4
+#define LAYER_SIZES {28*28,200,200,10}
 #define INPUT_LAYER_SIZE 28*28
 
 #define LEARNING_RATE 0.2 //should be 0<=alpha<=1
