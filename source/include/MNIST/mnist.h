@@ -7,6 +7,6 @@
 #include "macros.h"
 
 int parseImage(char* input_file,int nImages,float** data);
-int parseLabel(int argc, char** argv);
+int* parseLabel(char* fileDir);
 
 #endif

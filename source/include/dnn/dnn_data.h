@@ -16,11 +16,12 @@
 typedef struct{
 	int size;
 	float** data;
+	int* labels;
 }Dataset;
 
 void datasetAlloc(Dataset* dataset,int size);
 void datasetFree(Dataset* dataset);
-void addMNIST(char* mnist_dir,Dataset* dataset,int size);
+void addMNIST(char* mnist_image_dir,char* mnist_label_dir,Dataset* dataset,int size);
 
 
 #endif

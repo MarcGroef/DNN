@@ -20,4 +20,5 @@ typedef struct{
 
 void initDNNModule(DNNModule* module);
 void freeDNNModule(DNNModule* m);
+
 #endif

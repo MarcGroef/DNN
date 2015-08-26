@@ -19,7 +19,7 @@
 #include<opencv/cv.h>
 
 
-void showInputLayer(LayerStack* net);
+void showLayer(LayerStack* net,int layer);
 void showInputLayer2D(LayerStack* net);
 void showInputLayer2DImage(LayerStack* stack);
 #endif

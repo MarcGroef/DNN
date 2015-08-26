@@ -17,7 +17,7 @@ float randf(float bot,float top){
 void initWeightsRandom(LayerStack* ls,int layer){
 	for(int i=0;i<ls->layerSizes[layer];i++){
 		for(int j=0;j<ls->layerSizes[layer+1];j++){
-			ls->weights[layer][i][j]=randf(-.1f,.1f);
+			ls->weights[layer][i][j]=randf(-.2f,.2f);
 		}
 	}
 }

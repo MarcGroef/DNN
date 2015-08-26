@@ -21,7 +21,10 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o
  include/dnn/dnn_backprop.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
+ include/dnn/dnn_flow.h
  include/dnn/dnn_layer_stack.h
+ include/dnn/dnn_math.h
+ include/dnn/dnn_show.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o
  /home/marc/Deepnet/source/src/dnn/dnn_data.c
  include/MNIST/hex_lib.h
@@ -96,6 +99,7 @@ CMakeFiles/DeepNet.dir/src/main.c.o
  include/MNIST/macros.h
  include/MNIST/mnist.h
  include/dnn/dnn.h
+ include/dnn/dnn_backprop.h
  include/dnn/dnn_constants.h
  include/dnn/dnn_data.h
  include/dnn/dnn_flow.h

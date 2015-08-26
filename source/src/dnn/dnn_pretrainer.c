@@ -43,15 +43,15 @@ void performRBM(LayerStack* layers,Dataset* dataset,float learningRate,int nIter
 	float totalLearned=0;
 	float prevTotalLearned=0;
 	float preprevTotalLearned=0;
-	float diffThreshold=0.000001;
+	float diffThreshold=0.00000001;
 	int it=0;
 	//iterate through layer stack
-	for (int layer = 0; layer <layers->nLayers-1; layer++){ //layer i
+	for (int layer = 0; layer <layers->nLayers-2; layer++){ //layer i
 		vihjData = allocViHj(layers->layerSizes[layer],layers->layerSizes[layer+1]);
 		vihjModel = allocViHj(layers->layerSizes[layer],layers->layerSizes[layer+1]);
 		//for (int it=0;it<nIterations;it++){
 		printf("%f\n",fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3)));
-		for(it=0;it<10||fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3))>diffThreshold;it++){
+		for(it=0;it<3||fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3))>diffThreshold;it++){
 			//printf("RBM iteration %d at layer %d\n",it+1,layer);
 			totalLearned=0;
 			for (int dataLayer = 0; dataLayer < datasetSize; dataLayer++){
@@ -87,7 +87,7 @@ void performRBM(LayerStack* layers,Dataset* dataset,float learningRate,int nIter
 			
 			
 			float var = fabs(totalLearned-((prevTotalLearned+preprevTotalLearned+totalLearned)/3));
-			printf("totalWeight edit @ %d: %f %f\n",it,var,totalLearned);
+			printf("totalWeight edit @ %d: dW:%f w:%f\n",it,var,totalLearned);
 			
 		}
 		freeViHj(vihjData,layers->layerSizes[layer]);

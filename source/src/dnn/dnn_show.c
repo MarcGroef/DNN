@@ -3,9 +3,9 @@
 #include <dnn/dnn_show.h>
 
 
-void showInputLayer(LayerStack* stack){
-	for(int i=0;i<stack->layerSizes[0];i++){
-		printf("%c",(stack->layers[0][i]<0.5f?'.':'*'));
+void showLayer(LayerStack* stack,int layer){
+	for(int i=0;i<stack->layerSizes[layer];i++){
+		printf("%c",(stack->layers[layer][i]<0.5f?'.':'*'));
 	}
 }
 

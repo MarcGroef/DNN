@@ -7,4 +7,4 @@ echo "starting executing DNN..."
 
 
 #call program
-valgrind -v ./build/debug/DeepNet devel/MNIST_dataset/t10k-images.idx3-ubyte
+valgrind -v ./build/debug/DeepNet devel/MNIST_dataset/t10k-images.idx3-ubyte devel/MNIST_dataset/t10k-labels.idx1-ubyte

@@ -19,7 +19,7 @@ typedef struct {
 	int* layerSizes;
 	int nLayers;
 	float** layers;
-	float*** weights;
+	float*** weights;  //[source layer][source index][target index]
 	
 	//float output_weights[LAYER_SIZE][OUTPUT_LAYER_SIZE];
 	//float output_layer[OUTPUT_LAYER_SIZE];

@@ -15,6 +15,6 @@
 #include "dnn_pretrainer.h"
 #include "dnn_weights.h"
 #include "dnn_flow.h"
-
+#include "dnn_backprop.h"
 
 #endif

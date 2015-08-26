@@ -6,6 +6,7 @@
  Description : Parser for mnist label file.
  ============================================================================
  */
+//editted by Marc Groefsema
 #define  _CRT_SECURE_NO_WARNINGS
 #include <inttypes.h>
 #include <limits.h>
@@ -16,16 +17,15 @@
 #include <MNIST/hex_lib.h>
 #include <MNIST/macros.h>
 
+#include <assert.h>
+
 // Usage
 
-const char* kLabelUsage = "./a.out input_file output_file";
 
-int parseLabel(int argc, char** argv) {
-  if (argc != 3) {
-    printf("Usage: %s\n", kLabelUsage);
-    return 1;
-  }
-  FILE* input_file_pointer = fopen(argv[1], "r");
+
+int* parseLabel(char* fileDir) {
+  int* labels;
+  FILE* input_file_pointer = fopen(fileDir, "r");
   CHECK_NOTNULL(input_file_pointer);
   
   char magic_number_bytes[4];
@@ -46,20 +46,17 @@ int parseLabel(int argc, char** argv) {
   CHECK(fread(number_of_images_bytes, sizeof(char), 4, input_file_pointer));
   LOG_INFO("number of labels: %d", hex_array_to_int(number_of_images_bytes, 4));
 
-  // Open a file for dumping the labels.
-  FILE* output_file_pointer = fopen(argv[2], "w");
-  CHECK_NOTNULL(output_file_pointer);
+  labels = malloc(sizeof(int)*hex_array_to_int(number_of_images_bytes,4));
+  assert(labels!=NULL);
 
   char label_byte;
-  while (fread(&label_byte, sizeof(char), 1, input_file_pointer)) {
-    int char_written = fprintf(output_file_pointer,
-                               "%"PRId32"\n",
-                               hex_char_to_int(label_byte));
-    CHECK(char_written);
+  int nlabels= hex_array_to_int(number_of_images_bytes,4);
+  
+  for (int i=0;i<nlabels && fread(&label_byte, sizeof(char), 1, input_file_pointer);i++) {
+    labels[i] = hex_char_to_int(label_byte);
+
   }
 
   fclose(input_file_pointer);
-  fclose(output_file_pointer);
-  getchar();
-  return 0;
+  return labels;
 }
