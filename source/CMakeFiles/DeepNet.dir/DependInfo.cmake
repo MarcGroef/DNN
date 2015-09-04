@@ -8,6 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_C
   "/home/marc/Deepnet/source/src/MNIST/mnist_image_parser.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o"
   "/home/marc/Deepnet/source/src/MNIST/mnist_label_parser.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_backprop.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o"
+  "/home/marc/Deepnet/source/src/dnn/dnn_classifier.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_data.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_flow.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_flow.c.o"
   "/home/marc/Deepnet/source/src/dnn/dnn_layer_stack.c" "/home/marc/Deepnet/source/CMakeFiles/DeepNet.dir/src/dnn/dnn_layer_stack.c.o"

@@ -55,6 +55,8 @@ dnn_flow.h
 include/dnn/dnn_flow.h
 dnn_backprop.h
 include/dnn/dnn_backprop.h
+dnn_classifier.h
+include/dnn/dnn_classifier.h
 
 include/dnn/dnn_backprop.h
 dnn_layer_stack.h
@@ -65,6 +67,16 @@ stdlib.h
 -
 assert.h
 -
+
+include/dnn/dnn_classifier.h
+dnn_layer_stac.hk
+include/dnn/dnn_layer_stac.hk
+dnn_flow.h
+include/dnn/dnn_flow.h
+dnn_data.h
+include/dnn/dnn_data.h
+dnn_show.h
+include/dnn/dnn_show.h
 
 include/dnn/dnn_constants.h
 

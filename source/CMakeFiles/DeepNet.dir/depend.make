@@ -25,6 +25,8 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o: include/dnn/dnn_layer_stack.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o: include/dnn/dnn_math.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.o: include/dnn/dnn_show.h
 
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o: src/dnn/dnn_classifier.c
+
 CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o: src/dnn/dnn_data.c
 CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o: include/MNIST/hex_lib.h
 CMakeFiles/DeepNet.dir/src/dnn/dnn_data.c.o: include/MNIST/macros.h
@@ -99,6 +101,7 @@ CMakeFiles/DeepNet.dir/src/main.c.o: include/MNIST/macros.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/MNIST/mnist.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn_backprop.h
+CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn_classifier.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn_constants.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn_data.h
 CMakeFiles/DeepNet.dir/src/main.c.o: include/dnn/dnn_flow.h

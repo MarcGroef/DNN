@@ -207,6 +207,30 @@ src/dnn/dnn_backprop.c.s:
 	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_backprop.c.s
 .PHONY : src/dnn/dnn_backprop.c.s
 
+src/dnn/dnn_classifier.o: src/dnn/dnn_classifier.c.o
+.PHONY : src/dnn/dnn_classifier.o
+
+# target to build an object file
+src/dnn/dnn_classifier.c.o:
+	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o
+.PHONY : src/dnn/dnn_classifier.c.o
+
+src/dnn/dnn_classifier.i: src/dnn/dnn_classifier.c.i
+.PHONY : src/dnn/dnn_classifier.i
+
+# target to preprocess a source file
+src/dnn/dnn_classifier.c.i:
+	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.i
+.PHONY : src/dnn/dnn_classifier.c.i
+
+src/dnn/dnn_classifier.s: src/dnn/dnn_classifier.c.s
+.PHONY : src/dnn/dnn_classifier.s
+
+# target to generate assembly for a file
+src/dnn/dnn_classifier.c.s:
+	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.s
+.PHONY : src/dnn/dnn_classifier.c.s
+
 src/dnn/dnn_data.o: src/dnn/dnn_data.c.o
 .PHONY : src/dnn/dnn_data.o
 
@@ -444,6 +468,9 @@ help:
 	@echo "... src/dnn/dnn_backprop.o"
 	@echo "... src/dnn/dnn_backprop.i"
 	@echo "... src/dnn/dnn_backprop.s"
+	@echo "... src/dnn/dnn_classifier.o"
+	@echo "... src/dnn/dnn_classifier.i"
+	@echo "... src/dnn/dnn_classifier.s"
 	@echo "... src/dnn/dnn_data.o"
 	@echo "... src/dnn/dnn_data.i"
 	@echo "... src/dnn/dnn_data.s"

@@ -16,5 +16,6 @@
 #include "dnn_weights.h"
 #include "dnn_flow.h"
 #include "dnn_backprop.h"
+#include "dnn_classifier.h"
 
 #endif

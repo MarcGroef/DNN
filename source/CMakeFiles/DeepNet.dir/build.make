@@ -279,9 +279,32 @@ CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o.provides: CMakeFiles/DeepNet.dir/
 
 CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o.provides.build: CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o
 
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o: CMakeFiles/DeepNet.dir/flags.make
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o: src/dnn/dnn_classifier.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o   -c /home/marc/Deepnet/source/src/dnn/dnn_classifier.c
+
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/marc/Deepnet/source/src/dnn/dnn_classifier.c > CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.i
+
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/marc/Deepnet/source/src/dnn/dnn_classifier.c -o CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.s
+
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.requires:
+.PHONY : CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.requires
+
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.provides: CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.requires
+	$(MAKE) -f CMakeFiles/DeepNet.dir/build.make CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.provides.build
+.PHONY : CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.provides
+
+CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.provides.build: CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o
+
 CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o: src/MNIST/hex_lib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o   -c /home/marc/Deepnet/source/src/MNIST/hex_lib.c
 
@@ -304,7 +327,7 @@ CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o.provides.build: CMakeFiles/DeepNet.
 
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o: src/MNIST/mnist_image_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o   -c /home/marc/Deepnet/source/src/MNIST/mnist_image_parser.c
 
@@ -327,7 +350,7 @@ CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o.provides.build: CMakeFil
 
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o: CMakeFiles/DeepNet.dir/flags.make
 CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o: src/MNIST/mnist_label_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marc/Deepnet/source/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o"
 	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o   -c /home/marc/Deepnet/source/src/MNIST/mnist_label_parser.c
 
@@ -360,6 +383,7 @@ DeepNet_OBJECTS = \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o" \
 "CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o" \
+"CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o" \
 "CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o" \
 "CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o" \
 "CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o"
@@ -377,6 +401,7 @@ DeepNet_EXTERNAL_OBJECTS =
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o
+/home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o
 /home/marc/Deepnet/build/debug/DeepNet: CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o
@@ -428,6 +453,7 @@ CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_module.c.o.r
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o.requires
+CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o.requires
 CMakeFiles/DeepNet.dir/requires: CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o.requires

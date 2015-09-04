@@ -17,7 +17,7 @@ src/dnn/dnn_pretrainer.c
 src/dnn/dnn_show.c
 src/dnn/dnn_weights.c
 src/dnn/dnn_backprop.c
-src/dnn/dnn_classify.c
+src/dnn/dnn_classifier.c
 
 src/MNIST/hex_lib.c
 src/MNIST/mnist_image_parser.c

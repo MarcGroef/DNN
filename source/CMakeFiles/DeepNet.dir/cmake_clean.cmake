@@ -9,6 +9,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_pretrainer.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_show.c.o"
   "CMakeFiles/DeepNet.dir/src/dnn/dnn_weights.c.o"
+  "CMakeFiles/DeepNet.dir/src/dnn/dnn_classifier.c.o"
   "CMakeFiles/DeepNet.dir/src/MNIST/hex_lib.c.o"
   "CMakeFiles/DeepNet.dir/src/MNIST/mnist_image_parser.c.o"
   "CMakeFiles/DeepNet.dir/src/MNIST/mnist_label_parser.c.o"
