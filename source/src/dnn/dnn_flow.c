@@ -44,7 +44,7 @@ void flowUpUntil(LayerStack *network,int layer){
 }
 
 void flowUp(LayerStack *network){
-	int l,n;
+	int l,n,m;
 	for (l = 1; l < network->nLayers; l++){ //target layer
 		//OLD
 		/*for (int n = 0; n < LAYER_SIZE; n++){ //target neuron
