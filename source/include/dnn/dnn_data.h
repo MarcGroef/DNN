@@ -34,7 +34,7 @@ typedef struct{
 	int* labels;
 }Dataset;
 
-void datasetAlloc(Dataset* dataset,int size);
+void datasetAlloc(Dataset* dataset,int size,int nEntries);
 void datasetFree(Dataset* dataset);
 void addMNIST(char* mnist_image_dir,char* mnist_label_dir,Dataset* dataset,int size);
 

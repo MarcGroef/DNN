@@ -17,15 +17,15 @@
 #include <dnn/dnn_data.h>
 
 
-void datasetAlloc(Dataset* dataset, int size){
-	dataset->size = size;
-	dataset->data = (float**)malloc(size*sizeof(float*));
+void datasetAlloc(Dataset* dataset, int size,int nEntries){
+	dataset->size = nEntries;
+	dataset->data = (float**)malloc(nEntries*sizeof(float*));
 	assert(dataset->data != NULL);
-	for (int i = 0; i < size; i++){
-		dataset->data[i] =(float*) malloc(INPUT_LAYER_SIZE*sizeof(float));
+	for (int i = 0; i < nEntries; i++){
+		dataset->data[i] =(float*) malloc(size*sizeof(float));
 		assert(dataset->data[i] != NULL);
 	}
-	printf("Allocated dataset: %d bytes\n",(int)(size*sizeof(float*)+INPUT_LAYER_SIZE*sizeof(float)));
+	printf("Allocated dataset: %d bytes\n",(int)(nEntries*sizeof(float*)+size*sizeof(float)));
 }
 
 
