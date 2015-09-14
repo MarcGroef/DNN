@@ -41,8 +41,7 @@ typedef struct {
 }LayerStack;
 
 //functions
-void initLayerStack(LayerStack* net);
+void initLayerStack(LayerStack* net,int nLayers,int* layerSizes);
 void setInputData(LayerStack* net, Dataset* data, int index);
-void allocLayerStack(LayerStack* ls,int nLayers,int* layerSizes);
 void freeLayerStack(LayerStack* ls);
 #endif

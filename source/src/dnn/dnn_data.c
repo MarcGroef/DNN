@@ -18,10 +18,11 @@
 
 
 void datasetAlloc(Dataset* dataset, int size,int nEntries){
+	int i;
 	dataset->size = nEntries;
 	dataset->data = (float**)malloc(nEntries*sizeof(float*));
 	assert(dataset->data != NULL);
-	for (int i = 0; i < nEntries; i++){
+	for (i = 0; i < nEntries; i++){
 		dataset->data[i] =(float*) malloc(size*sizeof(float));
 		assert(dataset->data[i] != NULL);
 	}
@@ -30,7 +31,8 @@ void datasetAlloc(Dataset* dataset, int size,int nEntries){
 
 
 void datasetFree(Dataset* dataset){
-	for (int i = 0; i < dataset->size; i++)
+	int i;
+	for (i = 0; i < dataset->size; i++)
 		free(dataset->data[i]);
 	free(dataset->data);
 	free(dataset->labels);

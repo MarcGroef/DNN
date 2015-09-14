@@ -30,7 +30,7 @@
 
 typedef struct{
 	int size;
-	float** data;
+	double** data;
 	int* labels;
 }Dataset;
 

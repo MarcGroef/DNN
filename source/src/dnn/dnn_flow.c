@@ -19,7 +19,8 @@
 
 void flowUpUntil(LayerStack *network,int layer){
 	//printf("flowup until %d\n",layer);
-	for (int l = 1; l <= layer; l++){ //target layer
+        int l,n,m;
+	for ( l = 1; l <= layer; l++){ //target layer
 		//OLD
 		/*for (int n = 0; n < LAYER_SIZE; n++){ //target neuron
 			network->stack[l]->neurons[n] = 0;
@@ -29,9 +30,9 @@ void flowUpUntil(LayerStack *network,int layer){
 			network->stack[l]->neurons[n] = sigmoid(network->stack[l]->neurons[n]);
 		}*/
 		//printf("flowup to layer %d\n",l);
-		for (int n = 0; n < network->layerSizes[l]; n++){ //target neuron
+		for (n = 0; n < network->layerSizes[l]; n++){ //target neuron
 			network->layers[l][n] = 0;
-			for (int m = 0; m < network->layerSizes[l-1]; m++){//source neuron
+			for (m = 0; m < network->layerSizes[l-1]; m++){//source neuron
 				network->layers[l][n] += network->layers[l - 1][m] * network->weights[l-1][m][n];
 			}
 			network->layers[l][n] = sigmoid(network->layers[l][n]);
@@ -43,6 +44,7 @@ void flowUpUntil(LayerStack *network,int layer){
 }
 
 void flowUp(LayerStack *network){
+	int l,n;
 	for (int l = 1; l < network->nLayers; l++){ //target layer
 		//OLD
 		/*for (int n = 0; n < LAYER_SIZE; n++){ //target neuron
@@ -52,9 +54,9 @@ void flowUp(LayerStack *network){
 			}
 			network->stack[l]->neurons[n] = sigmoid(network->stack[l]->neurons[n]);
 		}*/
-		for (int n = 0; n < network->layerSizes[l]; n++){ //target neuron
+		for (n = 0; n < network->layerSizes[l]; n++){ //target neuron
 			network->layers[l][n] = 0;
-			for (int m = 0; m < network->layerSizes[l-1]; m++){//source neuron
+			for (m = 0; m < network->layerSizes[l-1]; m++){//source neuron
 				network->layers[l][n] += network->layers[l - 1][m] * network->weights[l - 1][m][n];
 			}
 			network->layers[l][n] = sigmoid(network->layers[l][n]);
@@ -64,7 +66,8 @@ void flowUp(LayerStack *network){
 }
 
 void flowDownFrom(LayerStack* network, int layer){
-	for (int l = layer; l > 0; l--){ //run from indicated layer down to second layer and flow down from it
+	int l,n,m;
+	for (l = layer; l > 0; l--){ //run from indicated layer down to second layer and flow down from it
 		//OLD
 		/*
 		for (int n = 0; n < LAYER_SIZE; n++){ //target neuron
@@ -76,9 +79,9 @@ void flowDownFrom(LayerStack* network, int layer){
 			network->stack[l-1]->neurons[n] = sigmoid(network->stack[l-1]->neurons[n]);
 			//printf("Neuron %d @Layer %d:%.2f\n",n,l-1,network->stack[l-1]->neurons[n]);
 		}*/
-		for (int n = 0; n < network->layerSizes[l-1]; n++){ //target neuron
+		for (n = 0; n < network->layerSizes[l-1]; n++){ //target neuron
 			network->layers[l - 1][n] = 0;  // l-1 is target layer
-			for (int m = 0; m < network->layerSizes[l]; m++){//source neuron
+			for (m = 0; m < network->layerSizes[l]; m++){//source neuron
 				//printf("W%d,%d:%.2f\n",n,m,network->stack[l - 1]->weightsNext[n][m]);
 				network->layers[l - 1][n] += network->layers[l][m] * network->weights[l - 1][n][m];
 			}
@@ -94,9 +97,10 @@ void flowDown(LayerStack* stack){
 
 
 void readLayer(LayerStack* layers,int layer){
-	for(int j=0;j<layers->layerSizes[layer];j++){
+	int i,j;
+	for(j=0;j<layers->layerSizes[layer];j++){
 		printf("Neuron %d\n",j);
-		for(int i=0;i<layers->layerSizes[layer];i++){
+		for(i=0;i<layers->layerSizes[layer];i++){
 			layers->layers[layer][i] = (i == j ? 1.0f : 0.0f);
 			
 		}

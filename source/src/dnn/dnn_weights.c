@@ -30,15 +30,17 @@ float randf(float bot,float top){
 }
 
 void initWeightsRandom(LayerStack* ls,int layer){
-	for(int i=0;i<ls->layerSizes[layer];i++){
-		for(int j=0;j<ls->layerSizes[layer+1];j++){
+	int i,j;
+	for(i=0;i<ls->layerSizes[layer];i++){
+		for(j=0;j<ls->layerSizes[layer+1];j++){
 			ls->weights[layer][i][j]=randf(-.2f,.2f);
 		}
 	}
 }
 
 void initStackWeightsRandom(LayerStack* ls){
-	for(int i=0;i<ls->nLayers-1;i++){  //skip last layer
+	int i;
+	for(i=0;i<ls->nLayers-1;i++){  //skip last layer
 		initWeightsRandom(ls,i);
 		//printf("set weights of layer %d\n",i);
 	}
