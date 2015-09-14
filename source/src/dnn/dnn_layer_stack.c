@@ -16,9 +16,9 @@
 */
 #include <dnn/dnn_layer_stack.h>
 
-void initLayerStack(LayerStack* net){
-	int layerSizes[] = LAYER_SIZES; //layer sizes
-	net->nLayers = LAYER_STACK_SIZE; 
+void initLayerStack(LayerStack* net,int nLayers,int* layerSizes){
+	
+	net->nLayers = nLayers; 
 	
 	net->layers = malloc(net->nLayers*sizeof(float*)); //alloc layers
 	assert(net->layers!=NULL);
@@ -41,9 +41,7 @@ void initLayerStack(LayerStack* net){
 			assert(net->weights!=NULL);
 		}
 	}
-	//OLD
-	/*for(int i=0;i<LAYER_STACK_SIZE;i++)
-		net->stack[i]=NULL;*/ 
+	
 }
 
 void setInputData(LayerStack* net,Dataset* data, int index){
@@ -52,31 +50,10 @@ void setInputData(LayerStack* net,Dataset* data, int index){
 		//printf("setting neuron %d to %.2f\n",i,data->data[index][i]);
 		net->layers[0][i]=(float)data->data[index][i]/255.0;
 	}
-	//OLD
-	/*for (int i = 0; i < LAYER_SIZE; i++){
-		net->stack[0]->neurons[i] = (float)data->data[index][i]/255.0;
-	}*/
+	
 }
 
-void allocLayerStack(LayerStack* ls){
-	
-	
-	//OLD:
-	/*ls->stack = (Layer**)malloc(LAYER_STACK_SIZE*sizeof(Layer));
-	assert(ls->stack!=NULL);
-	for(int i=0;i<LAYER_STACK_SIZE;i++){
-		ls->stack[i]=allocLayer(ls->stack[i]);
-		//
-	}
-	ls->input_layer = malloc(INPUT_LAYER_SIZE*sizeof(float));
-	assert(ls->input_layer!=NULL);
-	ls->input_weights = malloc(INPUT_LAYER_SIZE*sizeof(float*));
-	assert(ls->input_layer!=NULL);
-	for(int i=0;i<INPUT_LAYER_SIZE;i++){
-		ls->input_weights[i] = malloc(LAYER_SIZE*sizeof(float));
-		assert(ls->input_weights[i]!=NULL);
-	}*/
-}
+
 
 void freeLayerStack(LayerStack* ls){
 	
@@ -94,15 +71,4 @@ void freeLayerStack(LayerStack* ls){
 	free(ls->layers);
 	free(ls->layerSizes);
 	
-	
-	//OLD
-	/*for(int i=0;i<LAYER_STACK_SIZE;i++){
-		freeLayer(ls->stack[i]);
-	}
-	free(ls->stack);
-	free(ls->input_layer);
-	for(int i=0;i<INPUT_LAYER_SIZE;i++){
-		free(ls->input_weights[i]);
-	}
-	free(ls->input_weights);*/
 }
