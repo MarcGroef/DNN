@@ -31,7 +31,8 @@ float** allocViHj(int vSize,int hSize){
 }
 
 void freeViHj(float** d,int vSize){
-	for(int i=0;i<vSize;i++){
+	int i;
+	for(i=0;i<vSize;i++){
 		free(d[i]);
 	}
 	free(d);
