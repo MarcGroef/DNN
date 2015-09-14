@@ -20,13 +20,13 @@
 void datasetAlloc(Dataset* dataset, int size,int nEntries){
 	int i;
 	dataset->size = nEntries;
-	dataset->data = (float**)malloc(nEntries*sizeof(float*));
+	dataset->data = (double**)malloc(nEntries*sizeof(double*));
 	assert(dataset->data != NULL);
 	for (i = 0; i < nEntries; i++){
-		dataset->data[i] =(float*) malloc(size*sizeof(float));
+		dataset->data[i] =(double*) malloc(size*sizeof(double));
 		assert(dataset->data[i] != NULL);
 	}
-	printf("Allocated dataset: %d bytes\n",(int)(nEntries*sizeof(float*)+size*sizeof(float)));
+	printf("Allocated dataset: %d bytes\n",(int)(nEntries*sizeof(double*)+size*sizeof(double)));
 }
 
 
