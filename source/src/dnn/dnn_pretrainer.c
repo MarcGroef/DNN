@@ -63,7 +63,7 @@ void performRBM(LayerStack* layers,Dataset* dataset,float learningRate,int nIter
 	float prevTotalLearned=0;
 	float preprevTotalLearned=0;
 	float diffThreshold=0.00000001;
-	int it=0;
+
 	//iterate through layer stack
 	for (layer = 0; layer <layers->nLayers-2; layer++){ //layer i
 		vihjData = allocViHj(layers->layerSizes[layer],layers->layerSizes[layer+1]);
